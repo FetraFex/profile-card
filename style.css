@@ -53,7 +53,6 @@ body {
 
 @media (min-width: 320px) {
     .card {
-        height: 50vh;
         width: 90vw;
     }
 
@@ -72,6 +71,7 @@ body {
 @media (min-width: 1366px) {
     .card {
         width: 23%; /* Two cards per row */
+        height: 60vh;
     }
 }
 
