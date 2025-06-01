@@ -40,6 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     transform: rotateY(-540deg);
+    max-width: 441px;
     scale: 0.1;
     box-shadow: 0 0 0px #3A4CC5;
     filter: drop-shadow(0 0 0 #ffffff) drop-shadow(0 0 0 #ffffff);
@@ -48,6 +49,30 @@ body {
     background: linear-gradient(21deg, rgba(30, 37, 107, 1) 4%, rgba(18, 23, 63, 1) 12%, rgba(16, 18, 43, 1) 21%, rgba(16, 18, 43, 1) 76%, rgba(32, 41, 106, 1) 87%, rgba(68, 86, 221, 1) 91%, rgba(123, 157, 251, 1) 97%);
     opacity: 0;
     animation: spinfade 1s ease-in-out 2.2s forwards, light 1.3s ease-in-out 6s forwards, float 3s ease-in-out infinite 7s;
+}
+
+@media (min-width: 320px) {
+    .card {
+        height: 50vh;
+        width: 90vw;
+    }
+
+    .stack span {
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .card {
+        width: 33%; /* Two cards per row */
+    }
+}
+
+@media (min-width: 1366px) {
+    .card {
+        width: 23%; /* Two cards per row */
+    }
 }
 
 .petitdefi p {
